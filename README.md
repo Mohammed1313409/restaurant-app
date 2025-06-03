@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# 🍽️ Restaurant App | تطبيق المطعم
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile restaurant app developed using **React Native (Expo)** and **TypeScript**.  
+تطبيق موبايل لعرض أصناف الطعام، تم تطويره باستخدام React Native وTypeScript عبر منصة Expo.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features | الميزات
 
-   ```bash
-   npm install
-   ```
+- 🔐 User Authentication | تسجيل الدخول وإنشاء حساب
+- 📋 Food Categories | عرض الأقسام (مأكولات بحرية، سندويشات، أطباق رئيسية، مشروبات...)
+- 🧾 Detailed Item View | عرض تفاصيل كل صنف (وصف - سعر - تقييم - سعرات حرارية)
+- 💬 Comments & Ratings | تعليقات المستخدمين وتقييمهم لكل صنف
+- 🛒 Cart with Quantity Tracking | سلة مشتريات مع حساب الكمية والمجموع
+- 💳 Payment Options | الدفع كاش أو بفيزا
+- 💾 AsyncStorage | حفظ البيانات محليًا
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧭 App Navigation | التنقل داخل التطبيق
 
-In the output, you'll find options to open the app in a
+- `/login.tsx` – Login Page | صفحة تسجيل الدخول
+- `/signup.tsx` – Signup Page | صفحة إنشاء حساب
+- `/home.tsx` – Home Page | الصفحة الرئيسية
+- `/[id].tsx` – Food List by Category | عرض الأصناف حسب القسم
+- `/item/[itemId].tsx` – Item Details | تفاصيل الصنف
+- `/cart.tsx` – Shopping Cart | سلة الطلبات
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🧠 Technologies Used | التقنيات المستخدمة
 
-## Get a fresh project
+- **React Native + Expo**
+- **TypeScript**
+- **AsyncStorage**
+- **Git & GitHub**
 
-When you're ready, run:
+---
+
+## 🛠️ How to Run | كيفية تشغيل المشروع
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+npx expo start
